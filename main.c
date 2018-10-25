@@ -1,7 +1,7 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<stdlib.h>   
 #include<time.h>
-#include"funziona.h"
+#include"funziona.h"  
 
 //typedef struct mazzo_di_carte {
 //	int numero;
@@ -17,7 +17,7 @@
 
 int main()	{
 
-	int i=1,j,k=1;
+	int i=1,j,k=1, conta_turni;
 	int cntr, matta=0, L1L=1, setmez=1;
 	int test = 1;
 	float punti, banco;
@@ -54,7 +54,8 @@ do {
 		banco  = 0;
 		setmez = 1;
 		L1L    = 1;
-
+		conta_turni = 1;
+			
 		mazzo = deckshuffle(mazzo);
 
 		printf("Mazzo mescolato.\nPremere (1) per mescolare di nuovo\nPremere (2) per iniziare a giocare\n");
